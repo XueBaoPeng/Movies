@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="title_navigation_selected">精选</string>
+    <string name="title_navigation_special">专题</string>
+    <string name="title_navigation_find">发现</string>
+    <string name="title_navigation_mine">我的</string>
+</resources>

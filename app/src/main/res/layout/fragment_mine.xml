@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/both_match_style">
+
+    <com.xbp.movies.ui.views.MineView
+        android:id="@+id/fragment_mineView"
+        style="@style/both_match_style" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/both_match_style">
+
+    <com.xbp.movies.ui.views.DiscoverView
+        android:id="@+id/fragment_discoverView"
+        style="@style/both_match_style" />
+
+</RelativeLayout>
