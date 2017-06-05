@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
+import com.xbp.movies.model.net.net.HttpManager;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,6 +35,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         instance=this;
+        HttpManager.init(this);
     }
 
     public void registerActivity(Activity act) {

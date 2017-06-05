@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 
 import com.xbp.movies.R;
 import com.xbp.movies.base.BaseFragment;
+import com.xbp.movies.presenter.RecommendPresenter;
 import com.xbp.movies.ui.views.RecommendView;
 
 import butterknife.BindView;
@@ -22,12 +23,12 @@ public class RecommendFragment extends BaseFragment {
     RecommendView recommendView;
     @Override
     public void lazyFetchData() {
-
+        ((RecommendPresenter) mPresenter).onloadData();
     }
 
     @Override
     protected void initView(LayoutInflater inflater) {
-
+        mPresenter=new RecommendPresenter(recommendView);
     }
 
     @Override

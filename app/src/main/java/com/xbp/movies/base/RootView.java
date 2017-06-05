@@ -1,7 +1,6 @@
 package com.xbp.movies.base;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
@@ -17,7 +16,7 @@ import butterknife.Unbinder;
  * .......................................
  */
 
-public abstract class RootView<T extends BasePresenter> extends LinearLayout{
+public abstract class RootView<T extends BasePresenter> extends LinearLayout {
     protected boolean mActive;//是否被销毁
     protected Context mContext;
     protected Unbinder unbinder;
@@ -57,7 +56,7 @@ public abstract class RootView<T extends BasePresenter> extends LinearLayout{
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         if (mPresenter != null)
-//            mPresenter.attachView(this);
+            mPresenter.attarthView(this);
         mActive = true;
     }
 
